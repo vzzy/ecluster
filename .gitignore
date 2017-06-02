@@ -1,0 +1,7 @@
+.gitignore.swp
+.rebar/
+.settings/
+ebin/
+.project
+.rebar/
+

@@ -1,0 +1,12 @@
+{application, ecluster,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+  	kernel,
+  	stdlib
+  ]},
+  {mod, { ecluster_app, []}},
+  {env, []}
+ ]}.
