@@ -1,1 +1,1 @@
-erl -pa ebin -name 'ecluster2@127.0.0.1' -setcookie ecluster -config etc/app.config -s ecluster
+erl -pa ebin -name 'ecluster2@127.0.0.1' -setcookie ecluster -config etc/ecluster.config -s ecluster
