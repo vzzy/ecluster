@@ -112,6 +112,8 @@ handle_cast(_Msg, State) ->
 %% 空闲超时，重连节点
 handle_info({timeout, _Timer_ref, keepalive_conn}, #state{nodes = Nodes,conn_intvl = Conn_intvl} = State) ->
 	_New_Timer_ref = erlang:start_timer(Conn_intvl, self(), keepalive_conn),
+	%% net_kernel:allow([Tool_node,Cross_node]),
+    %% -kernel dist_auto_connect never 
 	My_Nodes = [node()] ++ nodes(),
 	catch conn_nodes(Nodes,My_Nodes),
 	{noreply, State};

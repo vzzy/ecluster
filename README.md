@@ -2,13 +2,13 @@
 ===================================   
 集群模块:配置简单。   种子节点列表、探测时间。
 
-0. 环境：
+#0. 环境：
 
     otp17.5+
     GNU Make
     rebar
     
-1. 编译
+#1. 编译
 
 	# make all        
 	
@@ -23,8 +23,7 @@
 	
 	Eshell V6.4  (abort with ^G)
  	(ecluster4@127.0.0.1)1> nodes().
-    ['ecluster1@127.0.0.1','ecluster3@127.0.0.1',
-    'ecluster2@127.0.0.1','ecluster5@127.0.0.1']
+    ['ecluster1@127.0.0.1','ecluster3@127.0.0.1','ecluster2@127.0.0.1','ecluster5@127.0.0.1']
 	
 	
 	
