@@ -10,6 +10,23 @@
     
 #1. 编译
 
+   xxx.app.src
+    {applications, [
+  		kernel,
+  		stdlib,
+  		ecluster
+  	]},
+
+	%% ecluster配置
+	  {ecluster,[
+	    {nodes,[
+	    	'ecluster1@127.0.0.1',
+	    	'ecluster2@127.0.0.1'
+	   	]},  							%% 种子节点列表
+	    {conn_intvl,5000}  				%% 重连间隔(毫秒)
+	  ]}
+
+
 	# make all        
 	
 	# make issue
