@@ -123,7 +123,7 @@ handle_info(_Info, State) ->
 %% 重连节点，奖励集群
 conn_nodes([],_My_Nodes)->
 	ok;
-conn_nodes([Node,T],My_Nodes)->
+conn_nodes([Node|T],My_Nodes)->
 	case lists:member(Node, My_Nodes) of
 		false-> %% 不在集群内，重连种子节点  ignored  | false | true
 			catch net_kernel:connect_node(Node);
